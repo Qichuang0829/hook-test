@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/claw-hook-agent-end",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plugin that forwards agent_end hook events to a webhook endpoint",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "claw-hook-llm-output",
+  "name": "Claw Hook LLM Output",
+  "description": "Forwards llm_output hook events to a webhook endpoint.",
+  "uiHints": {
+    "hook_url": {
+      "label": "Webhook URL",
+      "help": "POST target for llm_output events."
+    },
+    "bridge_token": {
+      "label": "Bridge Token",
+      "help": "Optional bridge_token header sent with each request.",
+      "sensitive": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "hook_url": {
+        "type": "string"
+      },
+      "bridge_token": {
+        "type": "string"
+      }
+    }
+  }
+}
