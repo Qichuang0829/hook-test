@@ -1,0 +1,28 @@
+{
+  "id": "new-claw-core-deduct-api",
+  "name": "New Claw Core Deduct API",
+  "description": "Calls resource deduction API after matching llm_input and llm_output by runId.",
+  "uiHints": {
+    "deduct_api_url": {
+      "label": "Deduct API URL",
+      "help": "POST target that receives matched llm_input and llm_output payloads."
+    },
+    "bridge_token": {
+      "label": "Bridge Token",
+      "help": "bridge_token header sent with each request.",
+      "sensitive": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "deduct_api_url": {
+        "type": "string"
+      },
+      "bridge_token": {
+        "type": "string"
+      }
+    }
+  }
+}

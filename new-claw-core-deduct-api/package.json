@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/new-claw-core-deduct-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plugin that calls resource deduction API after matching llm_input and llm_output by runId",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

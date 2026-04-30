@@ -2,7 +2,7 @@
   "name": "@openclaw/claw-hook-llm-output",
   "version": "1.0.0",
   "private": true,
-  "description": "Plugin that forwards llm_output hook events to a webhook endpoint",
+  "description": "Plugin that forwards llm_input and llm_output hook events to a webhook endpoint",
   "type": "module",
   "openclaw": {
     "extensions": [

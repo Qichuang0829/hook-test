@@ -1,0 +1,28 @@
+{
+  "id": "claw-hook-event-bridge",
+  "name": "Claw Hook Event Bridge",
+  "description": "Forwards llm_output and agent_end hook events to webhook endpoints.",
+  "uiHints": {
+    "hook_url": {
+      "label": "Hook URL",
+      "help": "Base URL for hook forwarding, for example http://127.0.0.1:3100."
+    },
+    "bridge_token": {
+      "label": "Bridge Token",
+      "help": "bridge_token header sent with each forwarded request.",
+      "sensitive": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "hook_url": {
+        "type": "string"
+      },
+      "bridge_token": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/claw-hook-event-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plugin that forwards llm_output and agent_end hook events to webhook endpoints",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

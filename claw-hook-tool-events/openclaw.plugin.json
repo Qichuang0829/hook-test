@@ -1,11 +1,11 @@
 {
-  "id": "claw-hook-llm-output",
-  "name": "Claw Hook LLM Output",
-  "description": "Forwards llm_input and llm_output hook events to a webhook endpoint.",
+  "id": "claw-hook-tool-events",
+  "name": "Claw Hook Tool Events",
+  "description": "Forwards before_tool_call, after_tool_call, and tool_result_persist hook events to a webhook service.",
   "uiHints": {
     "hook_url": {
-      "label": "Webhook URL",
-      "help": "Default POST target for llm_input and llm_output events. Requests include the x-openclaw-hook-event header."
+      "label": "Webhook Base URL",
+      "help": "Base POST target. Requests are sent to /before_tool_call, /after_tool_call, and /tool_result_persist."
     },
     "bridge_token": {
       "label": "Bridge Token",

@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/claw-hook-tool-events",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plugin that forwards before_tool_call, after_tool_call, and tool_result_persist hook events",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
